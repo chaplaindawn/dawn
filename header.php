@@ -28,24 +28,25 @@
 <div id="inner-wrap">
 <header class="header">
 	<div id="top" class="l-constrained">
-		<!-- <div class="l-logo">
+		<div class="l-logo">
 			<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img class="logo__image" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/logo@2x.png" width="197" height="48" alt="<?php echo esc_attr( bloginfo( 'name' ) ); ?>">
+				<img class="logo__image" src="http://placehold.it/200x100" width="197" height="48" alt="<?php echo esc_attr( bloginfo( 'name' ) ); ?>">
 			</a>
-		</div> -->
+		</div>
 		<a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#offcanvas"><span class="menu-toggle__line"></span><span class="visuallyhidden">Menu</span></a>
 		<div class="offcanvas-wrap l-header-content">
 			<div id="offcanvas" class="offcanvas">
 				<a id="nav-close-btn" class="menu-toggle menu-toggle--close" href="#top"><span class="menu-toggle__line"></span><span class="visuallyhidden">Close</span></a>
 				<nav class="l-header-main" role="navigation">
-					<ul class="main">
+					<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+					<!-- <ul class="main">
 						<li class="main__item"><a class="main__link" href="#">Link Item</a></li>
 						<li class="main__item"><a class="main__link" href="#">Link Item</a></li>
 						<li class="main__item"><a class="main__link" href="#">Link Item</a></li>
 						<li class="main__item"><a class="main__link" href="#">Link Item</a></li>
 						<li class="main__item"><a class="main__link" href="#">Link Item</a></li>
 						<li class="main__item"><a class="main__link" href="#">Link Item</a></li>
-					</ul>
+					</ul> -->
 				</nav>
 
 				<?php // wp_nav_menu( array(
