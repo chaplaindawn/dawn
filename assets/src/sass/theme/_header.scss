@@ -1,0 +1,28 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+
+
+.header__inner {
+    @include container;
+}
+
+.l-logo {
+    @include span(12);
+    @include mq(tablet) {
+        @include span(2);
+    }
+}
+
+.offcanvas .l-header-main {
+    @include span(12);
+    @include mq(tablet) {
+        @include span(10);
+        li {
+            display:inline-block;
+            a {
+                padding:.5em;
+            }
+        }
+    }
+}
