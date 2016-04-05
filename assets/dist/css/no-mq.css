@@ -423,13 +423,13 @@ body {
  */
 ::-moz-selection {
     color: white;
-    background: #d85030;
+    background: #73d9ea;
     text-shadow: none;
 }
 
 ::selection {
     color: white;
-    background: #d85030;
+    background: #73d9ea;
     text-shadow: none;
 }
 
@@ -725,7 +725,7 @@ h6 {
     font-family: sans-serif;
     font-weight: normal;
     text-transform: uppercase;
-    color: #333332;
+    color: #1b95a7;
 }
 
 h1,
@@ -786,7 +786,7 @@ button,
 input,
 select,
 textarea {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
     color: #333332;
 }
 
@@ -798,11 +798,11 @@ a {
        -moz-transition-property: color, background, border;
             transition-property: color, background, border;
     text-decoration: none;
-    color: #659f13;
+    color: #1b95a7;
 }
 
 a:hover {
-    color: #333332;
+    color: #73d9ea;
 }
 
 blockquote {
@@ -1896,7 +1896,7 @@ dd {
 .entry-content table {
     width: 100%;
     margin-bottom: 1em;
-    border: 1px solid #73d9e8;
+    border: 1px solid #73d9ea;
 }
 
 .entry__content table thead,
@@ -1932,7 +1932,7 @@ dd {
     position: relative;
     margin: 1em 0;
     padding: .5em;
-    background-color: #73d9e8;
+    background-color: #73d9ea;
 }
 
 .comment-list article.comment-body footer {
@@ -1963,7 +1963,7 @@ dd {
 .comment-list .comment-metadata > a {
     font-size: 12px;
     font-size: .75rem;
-    color: #23bcd2;
+    color: #20bdd7;
 }
 
 .comment-list .comment-metadata time {
@@ -1987,7 +1987,7 @@ dd {
     font-size: .75rem;
     display: inline-block;
     padding: 4px;
-    border: 1px solid #73d9e8;
+    border: 1px solid #73d9ea;
     background-color: white;
 }
 
@@ -2014,7 +2014,7 @@ dd {
 
 .comment-list .edit-link > a:hover {
     color: #659f13;
-    border: 1px solid #73d9e8;
+    border: 1px solid #73d9ea;
     background-color: white;
 }
 
@@ -2456,8 +2456,8 @@ textarea {
 
 .menu-toggle:hover,
 .js-nav .menu-toggle:hover {
-    border-color: #73d9e8;
-    background-color: #73d9e8;
+    border-color: #73d9ea;
+    background-color: #73d9ea;
 }
 
 .js-nav .menu-toggle {
@@ -2599,7 +2599,7 @@ textarea {
        -moz-transition-property: background, color;
             transition-property: background, color;
     color: #c2c2c2;
-    background-color: #73d9e8;
+    background-color: #73d9ea;
 }
 
 .pagination__item a:hover {
@@ -3446,8 +3446,12 @@ img.mfp-img {
     opacity: 0;
 }
 
+.header {
+    background: #73d9ea;
+}
+
 .header__inner {
-    max-width: 1080px;
+    max-width: 1024px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -3462,28 +3466,84 @@ img.mfp-img {
     float: left;
     float: left;
     width: 100%;
-    width: 16.6666666667%;
+    width: 25%;
+    padding: 1em;
     padding-right: 1.0416588541%;
     padding-right: 1.0416588541%;
     padding-left: 1.0416588541%;
     padding-left: 1.0416588541%;
 }
 
-.offcanvas .l-header-main {
+.l-header-main {
     float: left;
     float: left;
     width: 100%;
-    width: 83.3333333333%;
+    width: 75%;
+    padding-top: 4.5em;
     padding-right: 1.0416588541%;
     padding-right: 1.0416588541%;
     padding-left: 1.0416588541%;
     padding-left: 1.0416588541%;
+    text-align: right;
 }
 
-.offcanvas .l-header-main li {
+.l-header-main li {
     display: inline-block;
 }
 
-.offcanvas .l-header-main li a {
+.l-header-main li a {
+    font-size: 1.5em;
     padding: .5em;
+    color: #fff;
+}
+
+.header {
+    background: #73d9ea;
+}
+
+.header__inner {
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header__inner:after {
+    display: block;
+    clear: both;
+    content: " ";
+}
+
+.l-logo {
+    float: left;
+    float: left;
+    width: 100%;
+    width: 25%;
+    padding: 1em;
+    padding-right: 1.0416588541%;
+    padding-right: 1.0416588541%;
+    padding-left: 1.0416588541%;
+    padding-left: 1.0416588541%;
+}
+
+.l-header-main {
+    float: left;
+    float: left;
+    width: 100%;
+    width: 75%;
+    padding-top: 4.5em;
+    padding-right: 1.0416588541%;
+    padding-right: 1.0416588541%;
+    padding-left: 1.0416588541%;
+    padding-left: 1.0416588541%;
+    text-align: right;
+}
+
+.l-header-main li {
+    display: inline-block;
+}
+
+.l-header-main li a {
+    font-size: 1.5em;
+    padding: .5em;
+    color: #fff;
 }

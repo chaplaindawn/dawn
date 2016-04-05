@@ -1,0 +1,27 @@
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+.site-footer {
+    background: $secondary;
+}
+
+.footer-menu {
+    text-align: center;
+    padding: 1em 0;
+    li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 .5em;
+        a {
+            color: $white;
+            font-size: 1.2em;
+        }
+    }
+}
+
+.footer-info {
+    color: $white;
+    text-align: center;
+    padding-bottom: 1em;
+}

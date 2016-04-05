@@ -30,7 +30,7 @@
 	<div class="header__inner">
 		<div class="l-logo">
 			<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img class="logo__image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/logo.png" alt="<?php echo esc_attr( bloginfo( 'name' ) ); ?>">
+				<img class="logo__image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/logo.svg" alt="<?php echo esc_attr( bloginfo( 'name' ) ); ?>">
 			</a>
 		</div>
 		<a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#offcanvas"><span class="menu-toggle__line"></span><span class="visuallyhidden">Menu</span></a>
@@ -38,13 +38,15 @@
 			<div id="offcanvas" class="offcanvas">
 				<a id="nav-close-btn" class="menu-toggle menu-toggle--close" href="#top"><span class="menu-toggle__line"></span><span class="visuallyhidden">Close</span></a>
 				<nav class="l-header-main" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+					<?php wp_nav_menu( array( 'primary-menu' => 'main-menu' ) ); ?>
 				</nav>
 			</div>
 		</div>
 	</div>
 </header>
-<div class="wrap">
-	<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-	<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-</div>
+<!-- <div class="wrap">
+	<div class="wrap__inner">
+		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+	</div>
+</div> -->

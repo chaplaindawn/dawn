@@ -56,7 +56,7 @@
 
     // Susy
     $susy : (
-        container                            : 1080px,
+        container                            : 1024px,
         columns                              : 12,
         gutters                              : .33333, // [libsass] 2.0 doesn't handle decimals (e.g. 1/3)
         global-box-sizing                    : border-box,
@@ -80,7 +80,7 @@
     $black                                   : #222222;
     $off-white                               : #f6f6f6;
     $off-black                               : #222222;
-    $primary                                 : #73d9e8;
+    $primary                                 : #73d9ea;
     $secondary                               : #1b95a7;
     $alto                                    : #dbdbdb;
     $gray                                    : #888888;
@@ -119,14 +119,14 @@
 // Typography
 // ==========================================================================
 
-    $font-family                             : 'Open Sans', sans-serif;
+    $font-family                             : 'Lato', sans-serif;
     $font-family-secondary                   : sans-serif;
     $font-size                               : 16px;
     $font-color                              : $charcoal;
-    $link-color                              : $success;
-    $link-color-hover                        : $charcoal;
+    $link-color                              : $secondary;
+    $link-color-hover                        : $primary;
 
-    $selection-highlight-background          : $error;
+    $selection-highlight-background          : $primary;
     $selection-highlight-color               : white;
 
 // ==========================================================================
@@ -148,7 +148,7 @@
     $menu-toggle-background-color                          : $secondary;
     $menu-toggle-background-color-hover                    : $primary;
     $menu-toggle-border-color                              : $secondary;
-    $menu-toggle-border-color-hover                        : $primary;
+    $menu-toggle-border-color-hover                        : $secondary;
     $menu-toggle-line-color                                : white;
     $menu-toggle-line-color-hover                          : white;
     $menu-toggle-line-color-active                         : white;

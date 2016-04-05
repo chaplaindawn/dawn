@@ -11,21 +11,36 @@
 
 .l-logo {
     @include span(12);
+    padding: 1em;
     @include mq(tablet) {
-        @include span(2);
+        @include span(3);
     }
 }
 
 .offcanvas .l-header-main {
     @include span(12);
     @include mq(tablet) {
-        @include span(10);
+        padding-top: 4.5em;
+        text-align: right;
+        @include span(9);
         li {
             display:inline-block;
             a {
                 padding:.5em;
                 color: $white;
+                font-size: 1.5em;
             }
+        }
+    }
+}
+
+.offcanvas {
+    li {
+        list-style: none;
+        padding: 1em 0;
+        border: 1px solid $off-white;
+        a {
+            color: $white;
         }
     }
 }
