@@ -2,7 +2,9 @@
 // Header
 // ==========================================================================
 
-
+.header {
+  background: $primary;
+}
 .header__inner {
     @include container;
 }
@@ -22,6 +24,7 @@
             display:inline-block;
             a {
                 padding:.5em;
+                color: $white;
             }
         }
     }
