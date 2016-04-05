@@ -27,7 +27,7 @@
     a {
         padding: .4em .9em;
         display: block;
-        background-color: $mercury;
+        background-color: $primary;
         color: darken( $alto, 10% );
         @include transition-property( background, color );
         @include transition-duration( .15s );

@@ -12,7 +12,7 @@
         margin: 1em 0;
         padding: .5em;
         position: relative;
-        background-color: $mercury;
+        background-color: $primary;
 
         footer {
             margin-bottom: .5em;
@@ -35,7 +35,7 @@
 
         > a {
             @include rem( 'font-size', 12px );
-            color: darken( $mercury, 20% );
+            color: darken( $primary, 20% );
         }
 
         time {
@@ -58,7 +58,7 @@
             padding: 4px;
             display: inline-block;
             background-color: white;
-            border: 1px solid $mercury;
+            border: 1px solid $primary;
             @include rem( 'font-size', 12px );
 
             &:hover {
@@ -83,7 +83,7 @@
 
             &:hover {
                 background-color: white;
-                border: 1px solid $mercury;
+                border: 1px solid $primary;
                 color: $success;
             }
         }

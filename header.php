@@ -30,7 +30,7 @@
 	<div class="header__inner">
 		<div class="l-logo">
 			<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img class="logo__image" src="http://placehold.it/200x150" width="197" height="48" alt="<?php echo esc_attr( bloginfo( 'name' ) ); ?>">
+				<img class="logo__image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/img/logo.png" alt="<?php echo esc_attr( bloginfo( 'name' ) ); ?>">
 			</a>
 		</div>
 		<a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#offcanvas"><span class="menu-toggle__line"></span><span class="visuallyhidden">Menu</span></a>

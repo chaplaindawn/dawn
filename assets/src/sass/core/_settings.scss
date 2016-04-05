@@ -78,7 +78,8 @@
 
     $off-white                               : #f6f6f6;
     $off-black                               : #222222;
-    $mercury                                 : #e6e6e6;
+    $primary                                 : #73d9e8;
+    $secondary                               : #1b95a7;
     $alto                                    : #dbdbdb;
     $gray                                    : #888888;
     $charcoal                                : #333332;
@@ -142,10 +143,10 @@
     // Toggle
     // ----------------------------------------------------------------------
 
-    $menu-toggle-background-color                          : $error;
-    $menu-toggle-background-color-hover                    : white;
-    $menu-toggle-border-color                              : $error;
-    $menu-toggle-border-color-hover                        : $error;
+    $menu-toggle-background-color                          : $secondary;
+    $menu-toggle-background-color-hover                    : $primary;
+    $menu-toggle-border-color                              : $secondary;
+    $menu-toggle-border-color-hover                        : $primary;
     $menu-toggle-line-color                                : white;
-    $menu-toggle-line-color-hover                          : $error;
-    $menu-toggle-line-color-active                         : $error;
+    $menu-toggle-line-color-hover                          : white;
+    $menu-toggle-line-color-active                         : white;
