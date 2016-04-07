@@ -3432,7 +3432,7 @@ textarea {
 
 .menu-toggle:hover,
 .js-nav .menu-toggle:hover {
-    border-color: #73d9ea;
+    border-color: #1b95a7;
     background-color: #73d9ea;
 }
 
@@ -4474,7 +4474,7 @@ img.mfp-img {
     }
 }
 
-.l-header-main {
+.offcanvas .l-header-main {
     float: left;
     width: 100%;
     padding-right: 1.0416588541%;
@@ -4482,7 +4482,7 @@ img.mfp-img {
 }
 
 @media screen and (min-width: 48em) {
-    .l-header-main {
+    .offcanvas .l-header-main {
         float: left;
         width: 75%;
         padding-top: 4.5em;
@@ -4490,71 +4490,73 @@ img.mfp-img {
         padding-left: 1.0416588541%;
         text-align: right;
     }
-    .l-header-main li {
+    .offcanvas .l-header-main li {
         display: inline-block;
     }
-    .l-header-main li a {
+    .offcanvas .l-header-main li a {
         font-size: 1.5em;
         padding: .5em;
         color: #fff;
     }
 }
 
-.header {
-    background: #73d9ea;
+.offcanvas li {
+    padding: 1em 0;
+    list-style: none;
+    border: 1px solid #f6f6f6;
 }
 
-.header__inner {
-    max-width: 1024px;
+.offcanvas li a {
+    color: #fff;
+}
+
+.site-footer {
+    background: #1b95a7;
+}
+
+.footer-menu {
+    padding: 1em 0;
+    text-align: center;
+}
+
+.footer-menu li {
+    display: inline-block;
+    padding: 0 .5em;
+    list-style: none;
+}
+
+.footer-menu li a {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.footer-info {
+    padding-bottom: 1em;
+    text-align: center;
+    color: #fff;
+}
+
+.site-main {
+    max-width: 768px;
     margin-right: auto;
     margin-left: auto;
+    padding: 0 1em;
 }
 
-.header__inner:after {
+.site-main:after {
     display: block;
     clear: both;
     content: " ";
 }
 
-.l-logo {
-    float: left;
-    width: 100%;
-    padding: 1em;
-    padding-right: 1.0416588541%;
-    padding-left: 1.0416588541%;
+.hero__inner {
+    height: 80vh;
+    background: url(../img/hero.jpg) center center no-repeat;
+    background-size: cover;
 }
 
-@media screen and (min-width: 48em) {
-    .l-logo {
-        float: left;
-        width: 25%;
-        padding-right: 1.0416588541%;
-        padding-left: 1.0416588541%;
-    }
-}
-
-.l-header-main {
-    float: left;
-    width: 100%;
-    padding-right: 1.0416588541%;
-    padding-left: 1.0416588541%;
-}
-
-@media screen and (min-width: 48em) {
-    .l-header-main {
-        float: left;
-        width: 75%;
-        padding-top: 4.5em;
-        padding-right: 1.0416588541%;
-        padding-left: 1.0416588541%;
-        text-align: right;
-    }
-    .l-header-main li {
-        display: inline-block;
-    }
-    .l-header-main li a {
-        font-size: 1.5em;
-        padding: .5em;
-        color: #fff;
+@media screen and (min-width: 60em) {
+    .hero__inner {
+        height: 70vh;
     }
 }
