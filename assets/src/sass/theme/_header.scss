@@ -15,22 +15,36 @@
     @include mq(tablet) {
         @include span(3);
     }
+    @include mq(site) {
+      @include span(4);
+    }
+    .logo {
+      display: inline-block;
+      @include span(8);
+      @include push(1);
+    }
 }
 
 .offcanvas .l-header-main {
     @include span(12);
     @include mq(tablet) {
-        padding-top: 4.5em;
-        text-align: right;
+        padding-top: 2.5em;
+        text-align: center;
         @include span(9);
         li {
             display:inline-block;
             a {
-                padding:.5em;
+                padding:.6em;
                 color: $white;
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
         }
+    }
+    @include mq(site) {
+      @include span(8);
+      a {
+        font-size: 3em;
+      }
     }
 }
 
@@ -38,7 +52,6 @@
     li {
         list-style: none;
         padding: 1em 0;
-        border: 1px solid $off-white;
         a {
             color: $white;
         }

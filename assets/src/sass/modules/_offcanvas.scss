@@ -157,8 +157,8 @@
    ========================================================================== */
 
 .menu-toggle {
-    margin-top: 24px;
-    margin-right: 12px;
+    margin-top: 10%;
+    margin-right: 2%;
     width: 3em;
     height: 3em;
     position: relative;
@@ -166,6 +166,8 @@
     background-color: $menu-toggle-background-color;
     border: 2px solid $menu-toggle-border-color;
     border-radius: 2px;
+    @include span(2);
+    @include pull(2);
 
     &:hover,
     .js-nav &:hover {
