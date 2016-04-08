@@ -14,7 +14,7 @@
         height: 40vh;
     }
 }
-.content-area {
+.home .content-area {
   margin-bottom: 2.5em;
   @include mq(site) {
     h2 {
@@ -24,4 +24,7 @@
       font-size: 24px;
     }
   }
+}
+.entry-title {
+    margin-top: 1em;
 }

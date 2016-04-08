@@ -3421,10 +3421,15 @@ textarea {
 .menu-toggle {
     position: relative;
     display: none;
+    float: left;
     width: 3em;
+    width: 16.6666666667%;
     height: 3em;
-    margin-top: 24px;
-    margin-right: 12px;
+    margin-top: 10%;
+    margin-right: 2%;
+    margin-left: -16.6666666667%;
+    padding-right: 1.0416588541%;
+    padding-left: 1.0416588541%;
     border: 2px solid #1b95a7;
     border-radius: 2px;
     background-color: #1b95a7;
@@ -4474,6 +4479,24 @@ img.mfp-img {
     }
 }
 
+@media screen and (min-width: 60em) {
+    .l-logo {
+        float: left;
+        width: 33.3333333333%;
+        padding-right: 1.0416588541%;
+        padding-left: 1.0416588541%;
+    }
+}
+
+.l-logo .logo {
+    display: inline-block;
+    float: left;
+    width: 66.6666666667%;
+    margin-left: 8.3333333333%;
+    padding-right: 1.0416588541%;
+    padding-left: 1.0416588541%;
+}
+
 .offcanvas .l-header-main {
     float: left;
     width: 100%;
@@ -4485,18 +4508,30 @@ img.mfp-img {
     .offcanvas .l-header-main {
         float: left;
         width: 75%;
-        padding-top: 4.5em;
+        padding-top: 2.5em;
         padding-right: 1.0416588541%;
         padding-left: 1.0416588541%;
-        text-align: right;
+        text-align: center;
     }
     .offcanvas .l-header-main li {
         display: inline-block;
     }
     .offcanvas .l-header-main li a {
-        font-size: 1.5em;
-        padding: .5em;
+        font-size: 1.2em;
+        padding: .6em;
         color: #fff;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .offcanvas .l-header-main {
+        float: left;
+        width: 66.6666666667%;
+        padding-right: 1.0416588541%;
+        padding-left: 1.0416588541%;
+    }
+    .offcanvas .l-header-main a {
+        font-size: 3em;
     }
 }
 
@@ -4518,13 +4553,17 @@ img.mfp-img {
     text-align: center;
 }
 
-.footer-menu li {
+.footer-menu ul {
+    padding: 0;
+}
+
+.footer-menu ul li {
     display: inline-block;
-    padding: 0 .5em;
+    padding: .5em;
     list-style: none;
 }
 
-.footer-menu li a {
+.footer-menu ul li a {
     font-size: 1.2em;
     color: #fff;
 }
@@ -4549,13 +4588,26 @@ img.mfp-img {
 }
 
 .hero__inner {
-    height: 80vh;
+    height: 50vh;
     background: url(../img/hero.jpg) center center no-repeat;
     background-size: cover;
 }
 
 @media screen and (min-width: 60em) {
     .hero__inner {
-        height: 70vh;
+        height: 40vh;
+    }
+}
+
+.content-area {
+    margin-bottom: 2.5em;
+}
+
+@media screen and (min-width: 60em) {
+    .content-area h2 {
+        font-size: 40px;
+    }
+    .content-area p {
+        font-size: 24px;
     }
 }
