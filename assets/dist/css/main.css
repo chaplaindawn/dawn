@@ -4625,3 +4625,7 @@ img.mfp-img {
 .entry-title {
     margin-top: 1em;
 }
+
+.page-id-20 .wpcmsdev-clear-floats {
+    display: none;
+}
