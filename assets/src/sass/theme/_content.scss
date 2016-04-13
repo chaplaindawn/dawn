@@ -14,6 +14,9 @@
         height: 40vh;
     }
 }
+.content-area {
+  margin-bottom: 3em;
+}
 .home .content-area {
   margin-bottom: 2.5em;
   @include mq(site) {
@@ -25,9 +28,25 @@
     }
   }
 }
-.entry-title {
+.entry-title, .page-title {
     margin-top: 1em;
 }
 .page-id-20 .wpcmsdev-clear-floats {
     display: none;
+}
+.blog, .single-page, .archive, .search {
+  @include mq(tablet) {
+    .content-area {
+      @include span(8);
+    }
+    .widget-area {
+      @include span(4);
+    }
+  }
+}
+.widget-area {
+  margin-top: 3em;
+}
+.nav-previous {
+  float: right;
 }

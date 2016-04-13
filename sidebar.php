@@ -13,7 +13,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <div id="secondary" class="widget-area" role="complementary">
-	<?php if(is_home()) { ?>
+	<?php if(is_home() || is_single() || is_search() || is_archive()) { ?>
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	<?php } ?>
 </div><!-- #secondary -->
