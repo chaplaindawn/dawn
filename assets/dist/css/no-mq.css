@@ -3510,7 +3510,7 @@ img.mfp-img {
 }
 
 .offcanvas .l-header-main li a {
-    font-size: 1.2em;
+    font-size: 1em;
     padding: .6em;
     color: #fff;
 }
@@ -3525,6 +3525,7 @@ img.mfp-img {
 }
 
 .site-footer {
+    clear: both;
     background: #1b95a7;
 }
 
@@ -3573,14 +3574,47 @@ img.mfp-img {
     background-size: cover;
 }
 
+.content-area {
+    margin-bottom: 3em;
+}
+
 .home .content-area {
     margin-bottom: 2.5em;
 }
 
-.entry-title {
+.entry-title,
+.page-title {
     margin-top: 1em;
 }
 
 .page-id-20 .wpcmsdev-clear-floats {
     display: none;
+}
+
+.blog .content-area,
+.single-page .content-area,
+.archive .content-area,
+.search .content-area {
+    float: left;
+    width: 66.6666666667%;
+    padding-right: 1.0416588541%;
+    padding-left: 1.0416588541%;
+}
+
+.blog .widget-area,
+.single-page .widget-area,
+.archive .widget-area,
+.search .widget-area {
+    float: left;
+    width: 33.3333333333%;
+    padding-right: 1.0416588541%;
+    padding-left: 1.0416588541%;
+}
+
+.widget-area {
+    margin-top: 3em;
+}
+
+.nav-previous {
+    float: right;
 }

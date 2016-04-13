@@ -34,7 +34,7 @@
 .page-id-20 .wpcmsdev-clear-floats {
     display: none;
 }
-.blog, .single-page, .archive, .search {
+.blog, .single-page, .single-post, .archive, .search {
   @include mq(tablet) {
     .content-area {
       @include span(8);
