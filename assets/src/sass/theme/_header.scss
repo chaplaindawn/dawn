@@ -56,7 +56,7 @@
         font-size: 1.3em;
       }
     }
-    @include mq(tablet) {
+    @include mq(tablet-landscape) {
       li a {
         padding: .45em;
       }
