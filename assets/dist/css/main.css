@@ -3348,9 +3348,9 @@ textarea {
 
 @media screen and (max-width: 47.99em) {
     .csstransforms3d.csstransitions.js-ready .offcanvas .offcanvas-wrap {
-        -webkit-transition: opacity, -webkit-transform;
-           -moz-transition: opacity, -moz-transform;
-                transition: opacity, transform;
+        -webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
+           -moz-transition: opacity 300ms 100ms, -moz-transform 500ms ease;
+                transition: opacity 300ms 100ms, transform 500ms ease;
         -webkit-transform: translate3d(-70%, 0, 0) scale3d(.9, .9, .9);
            -moz-transform: translate3d(-70%, 0, 0) scale3d(.9, .9, .9);
             -ms-transform: translate3d(-70%, 0, 0) scale3d(.9, .9, .9);
@@ -3515,9 +3515,9 @@ textarea {
 }
 
 .menu-toggle__line:before {
-    -webkit-transition: -webkit-transform;
-       -moz-transition:    -moz-transform;
-            transition:         transform;
+    -webkit-transition: -webkit-transform .3s;
+       -moz-transition:    -moz-transform .3s;
+            transition:         transform .3s;
     -webkit-transform: translateY(-6px);
        -moz-transform: translateY(-6px);
         -ms-transform: translateY(-6px);
@@ -3535,9 +3535,9 @@ textarea {
 }
 
 .menu-toggle__line:after {
-    -webkit-transition: -webkit-transform;
-       -moz-transition:    -moz-transform;
-            transition:         transform;
+    -webkit-transition: -webkit-transform .3s;
+       -moz-transition:    -moz-transform .3s;
+            transition:         transform .3s;
     -webkit-transform: translateY(6px);
        -moz-transform: translateY(6px);
         -ms-transform: translateY(6px);
@@ -3586,7 +3586,7 @@ textarea {
     -webkit-transition-property: background, color;
        -moz-transition-property: background, color;
             transition-property: background, color;
-    color: #c2c2c2;
+    color: #c2c1c1;
     background-color: #73d9ea;
 }
 
@@ -4527,8 +4527,14 @@ img.mfp-img {
     }
     .offcanvas .l-header-main li a {
         font-size: 1em;
-        padding: .6em;
+        padding: .3em;
         color: #fff;
+    }
+}
+
+@media screen and (min-width: 53.125em) {
+    .offcanvas .l-header-main li a {
+        padding: .6em;
     }
 }
 
@@ -4542,6 +4548,13 @@ img.mfp-img {
     }
     .offcanvas .l-header-main li a {
         font-size: 1.3em;
+        padding: .26em;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .offcanvas .l-header-main li a {
+        padding: .45em;
     }
 }
 
@@ -4639,6 +4652,7 @@ img.mfp-img {
 @media screen and (min-width: 48em) {
     .blog .content-area,
     .single-page .content-area,
+    .single-post .content-area,
     .archive .content-area,
     .search .content-area {
         float: left;
@@ -4648,6 +4662,7 @@ img.mfp-img {
     }
     .blog .widget-area,
     .single-page .widget-area,
+    .single-post .widget-area,
     .archive .widget-area,
     .search .widget-area {
         float: left;
